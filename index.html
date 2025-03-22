@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #000;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #333;
             font-family: 'Russo One', sans-serif;
             line-height: 1.6;
             display: flex;
@@ -19,15 +19,15 @@
         }
         .container {
             width: 100%;
-            max-width: 900px;
+            max-width: 800px;
             text-align: center;
         }
         h2, h3 {
-            color: #FFE81F;
-            text-shadow: 2px 2px 4px #000;
+            color: #0066cc;
+            margin-bottom: 15px;
         }
         a {
-            color: #FFE81F;
+            color: #0066cc;
             text-decoration: none;
         }
         a:hover {
@@ -37,21 +37,37 @@
             font-size: 42px;
             font-weight: bold;
             letter-spacing: 3px;
-            color: #FFE81F;
-            text-shadow: 3px 3px 5px #444;
+            color: #000000;
             margin-bottom: 20px;
         }
         iframe {
-            border: 1px solid #555;
+            border: 1px solid #ddd;
             border-radius: 4px;
             width: 100%;
             height: 450px;
         }
         .schedule {
-            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 70px;
             border-radius: 8px;
             margin-bottom: 15px;
-            background-color: #222;
+            background-color: #f4f7fb;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: right;
+        }
+        .schedule img {
+            width: 150px;
+            margin-right: 20px;
+        }
+        .lightning-talk {
+            padding: 15px 30px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: #f4f7fb;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
         }
         img {
             border-radius: 4px;
@@ -68,7 +84,7 @@
     <p class="star-wars-text">London GenAI Forum 2025</p>
 
     <iframe src="https://lu.ma/embed/event/evt-GbGChe59H6u6pDd/simple" frameborder="0" allowfullscreen></iframe>
-    <br><br>
+
     <p>
         The GenAI Forum at UCL brings together leading researchers and practitioners to explore cutting-edge developments in GenAI. The two-hour evening session features talks from prominent academics and industry experts, showcasing the latest breakthroughs in 3D generative modeling, 3D scene understanding, and other applications. This will be followed by a one-hour session for networking.
     </p>
@@ -86,36 +102,42 @@
 
     <h2>Tentative Schedule</h2>
 
-    <div class="schedule">Doors open shortly after 5PM with coffee available.</div>
+    <div class="lightning-talk">Doors open shortly after 5PM with coffee available.</div>
 
     <div class="schedule">
-        <h3>Keynote 1: 5:10PM — 5:35PM</h3>
-        <img src="./index_files/kopanas.jpeg" width="150">
-        <p><b>George Kopanas</b><br>Member of Technical Staff, Runway<br><br>TBD</p>
+        <img src="./index_files/kopanas.jpeg">
+        <div>
+            <h3>Keynote 1: 5:10PM — 5:35PM</h3>
+            <p><b>George Kopanas</b><br>Member of Technical Staff, Runway<br><br>TBD</p>
+        </div>
     </div>
 
     <div class="schedule">
-        <h3>Keynote 2: 5:35PM — 6:00PM</h3>
-        <img src="./index_files/placeholder.webp" width="150">
-        <p><b>TBD</b><br>TBD</p>
+        <img src="./index_files/placeholder.webp">
+        <div>
+            <h3>Keynote 2: 5:35PM — 6:00PM</h3>
+            <p><b>TBD</b><br>TBD</p>
+        </div>
     </div>
 
     <div class="schedule">
-        <h3>Keynote 3: 6:00PM — 6:25PM</h3>
-        <img src="./index_files/placeholder.webp" width="150">
-        <p><b>TBD</b><br>TBD</p>
+        <img src="./index_files/placeholder.webp">
+        <div>
+            <h3>Keynote 3: 6:00PM — 6:25PM</h3>
+            <p><b>TBD</b><br>TBD</p>
+        </div>
     </div>
 
-    <div class="schedule">
-        <h3>⚡ Lightning Talk Sessions: 6:25PM — 6:45PM</h3>
-        1. Shalini Maiti (UCL, Meta): TBD <br>
-        2. TBD <br>
-        3. TBD <br>
-        </ol>
+    <div class="lightning-talk">
+      <h3>⚡ Lightning Talk Sessions: 6:30PM — 7PM</h3>
+      <p>Shalini Maiti (UCL, Meta): TBD</p>
+      <p>TBD</p>
+      <p>TBD</p>
     </div>
 
-    <div class="schedule">
-        <h3>Networking, Q&A (1 hour) 🍕 🍹 💬</h3>
+    <div class="lightning-talk">
+        <h3>Networking, Q&A 7PM - 8 PM 🍕 🍹 💬</h3>
+        <p>Drinks and light food available.</p>
     </div>
 
     <h2>Sponsors</h2>
