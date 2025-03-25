@@ -1,84 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>London GenAI Meetup: Frontiers and Applications 2025</title>
-    <meta name="author" content="Pradyumna">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://cs.nyu.edu/~fouhey/NYCVision2025/images/favicon/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #ffffff;
-            color: #333;
-            font-family: 'Russo One', sans-serif;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        .container {
-            width: 100%;
-            max-width: 800px;
-            text-align: center;
-        }
-        h2, h3 {
-            color: #000000;
-            margin-bottom: 15px;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .star-wars-text {
-            font-size: 42px;
-            font-weight: bold;
-            letter-spacing: 3px;
-            color: #000000;
-            margin-bottom: 20px;
-        }
-        iframe {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            width: 100%;
-            height: 450px;
-        }
-        .schedule {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 12px 70px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            background-color: #f4f7fb;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: right;
-        }
-        .schedule img {
-            width: 150px;
-            margin-right: 20px;
-        }
-        .lightning-talk {
-            padding: 15px 30px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            background-color: #f4f7fb;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        img {
-            border-radius: 4px;
-        }
-        .footer img {
-            height: 55px;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>London GenAI Meetup: Frontiers and Applications 2025</title>
+  <meta name="author" content="Niladri">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://cs.nyu.edu/~fouhey/NYCVision2025/images/favicon/favicon.ico"
+    type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #333;
+      font-family: 'Russo One', sans-serif;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    h2,
+    h3 {
+      color: #000000;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .star-wars-text {
+      font-size: 42px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      height: 450px;
+    }
+
+    .schedule {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 40px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background-color: #f4f7fb;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: right;
+    }
+
+    .schedule img {
+      width: 150px;
+      margin-right: 20px;
+    }
+
+    .lightning-talk {
+      padding: 15px 30px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background-color: #f4f7fb;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    img {
+      border-radius: 4px;
+    }
+
+    .footer img {
+      height: 55px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .abstract-toggle {
+      cursor: pointer;
+      color: #0066cc;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      user-select: none;
+    }
+
+    .abstract-toggle .triangle {
+      margin-right: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .abstract-toggle.expanded .triangle {
+      transform: rotate(90deg);
+    }
+  </style>
+  <script>
+    function toggleAbstract(id) {
+      var abstract = document.getElementById(id);
+      var toggle = abstract.previousElementSibling;
+      if (abstract.style.display === "none") {
+        abstract.style.display = "block";
+        toggle.classList.add('expanded');
+      } else {
+        abstract.style.display = "none";
+        toggle.classList.remove('expanded');
+      }
+    }
+
+  </script>
 </head>
+
 <body>
   <div class="container">
     <p class="star-wars-text">London GenAI Forum 2025</p>
@@ -86,18 +134,25 @@
     <iframe src="https://lu.ma/embed/event/evt-GbGChe59H6u6pDd/simple" frameborder="0" allowfullscreen></iframe>
 
     <p>
-        The GenAI Forum at UCL brings together leading researchers and practitioners to explore cutting-edge developments in GenAI. The two-hour evening session features talks from prominent academics and industry experts, showcasing the latest breakthroughs in 3D generative modeling, 3D scene understanding, and other applications. This will be followed by a one-hour session for networking.
+      The GenAI Forum at UCL brings together leading researchers and practitioners to explore cutting-edge developments
+      in GenAI. The two-hour evening session features talks from prominent academics and industry experts, showcasing
+      the latest breakthroughs in 3D generative modeling, 3D scene understanding, and other applications. This will be
+      followed by a one-hour session for networking.
     </p>
 
     <p>
-        <b>Date and Time:</b> April 15, 2025, 5PM - 8PM<br>
-        <b>Location:</b> <a href="https://maps.app.goo.gl/4GCJYDwCf8qLeSYd8">University College London</a><br>
-        <b>Address:</b> Gower St, London WC1E 6BT<br>
-        <b>Directions:</b> <a href="https://geometry.cs.ucl.ac.uk/">Geometry Lab building</a><br>
-        <b>Advisory Committee:</b> <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/index.html">Niloy J. Mitra</a>, <a href="https://www.research.autodesk.com/people/hooman-shayani/">Hooman Shayani</a><br>
-        <b>Organization Committee:</b> <a href="https://mfischer-ucl.github.io/">Michael Fischer</a>, <a href="https://niladridutt.com/">Niladri Shekhar Dutt</a>, <a href="https://preddy5.github.io/">Pradyumna Reddy</a><br>
-        <b>Youtube live:</b> <a href="https://youtube.com/">Will be updated</a><br><br>
-        <b>Attendance Information:</b> Please register <a href="https://lu.ma/0hkiwjeu">here</a> to get tickets. Current details are tentative and will be updated by March 22.
+      <b>Date and Time:</b> April 15, 2025, 5PM - 8PM<br>
+      <b>Location:</b> <a href="https://maps.app.goo.gl/4GCJYDwCf8qLeSYd8">University College London</a><br>
+      <b>Address:</b> Gower St, London WC1E 6BT<br>
+      <b>Directions:</b> <a href="https://geometry.cs.ucl.ac.uk/">Geometry Lab building</a><br>
+      <b>Advisory Committee:</b> <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/index.html">Niloy J. Mitra</a>, <a
+        href="https://www.research.autodesk.com/people/hooman-shayani/">Hooman Shayani</a><br>
+      <b>Organization Committee:</b> <a href="https://mfischer-ucl.github.io/">Michael Fischer</a>, <a
+        href="https://niladridutt.com/">Niladri Shekhar Dutt</a>, <a href="https://preddy5.github.io/">Pradyumna
+        Reddy</a><br>
+      <b>Youtube live:</b> <a href="https://youtube.com/">Will be updated</a><br><br>
+      <b>Attendance Information:</b> Please register <a href="https://lu.ma/0hkiwjeu">here</a> to get tickets. Current
+      details are tentative and will be updated by March 22.
     </p>
 
     <h2>Tentative Schedule</h2>
@@ -105,53 +160,68 @@
     <div class="lightning-talk">Doors open shortly after 5PM with coffee available.</div>
 
     <div class="schedule">
-        <img src="./index_files/kopanas.jpeg">
-        <div>
-            <h3>Keynote 1: 5:10PM — 5:35PM</h3>
-            <p><b><a href="https://grgkopanas.github.io/" target="_blank">George Kopanas</a></b><br>Member of Technical Staff, Runway<br><br>TBD</p>
+      <img src="./index_files/kopanas.jpeg">
+      <div>
+        <h3>Keynote 1: 5:10PM — 5:35PM</h3>
+        <p><b><a href="https://grgkopanas.github.io/" target="_blank">George Kopanas</a></b><br>Member of Technical
+          Staff, Runway<br>From 3D Reconstruction to Generative Video: A Creative Continuum</p>
+        <div class="abstract-toggle" onclick="toggleAbstract('abstract1')">
+          <span class="triangle">▶</span> Abstract
         </div>
+        <p id="abstract1" style="display:none;">3D reconstruction was one of the holy grails of 3D Computer Vision in
+          the hope to make 3D representations more readily available without intense amounts of labor to generate 3D
+          models. Differentiable rendering and optimization has made immense progress in that direction. At the same
+          time, with similar motifs, image and video generative models have already completely changed how we think
+          about the way we create these types of media. What are the lessons we need to learn from both of these
+          endeavours and can these two domains converge?</p>
+      </div>
+    </div>
+
+
+    <div class="schedule">
+      <img src="./index_files/placeholder.webp">
+      <div>
+        <h3>Keynote 2: 5:35PM — 6:00PM</h3>
+        <p><b>TBD</b><br>TBD</p>
+      </div>
     </div>
 
     <div class="schedule">
-        <img src="./index_files/placeholder.webp">
-        <div>
-            <h3>Keynote 2: 5:35PM — 6:00PM</h3>
-            <p><b>TBD</b><br>TBD</p>
-        </div>
-    </div>
-
-    <div class="schedule">
-        <img src="./index_files/placeholder.webp">
-        <div>
-            <h3>Keynote 3: 6:00PM — 6:25PM</h3>
-            <p><b>TBD</b><br>TBD</p>
-        </div>
+      <img src="./index_files/placeholder.webp">
+      <div>
+        <h3>Keynote 3: 6:00PM — 6:25PM</h3>
+        <p><b>TBD</b><br>TBD</p>
+      </div>
     </div>
 
     <div class="lightning-talk">
       <h3>⚡ Lightning Talk Sessions: 6:30PM — 7PM</h3>
-      <p><a href="https://uk.linkedin.com/in/shalini-maiti-a76a2b86" target="_blank"> Shalini Maiti (UCL, Meta)</a>: TBD</p>
+      <p><a href="https://uk.linkedin.com/in/shalini-maiti-a76a2b86" target="_blank"> Shalini Maiti (UCL, Meta)</a>: TBD
+      </p>
       <p><a href="https://edexheim.github.io/" target="_blank">Eric Dexheimer (Imperial College London)</a>: TBD</p>
-      <p><a href="https://scholar.google.com/citations?user=NVD-BU4AAAAJ&hl=en" target="_blank">Rishabh Kabra (UCL, DeepMind)</a>: TBD</p>
+      <p><a href="https://scholar.google.com/citations?user=NVD-BU4AAAAJ&hl=en" target="_blank">Rishabh Kabra (UCL,
+          DeepMind)</a>: TBD</p>
     </div>
 
     <div class="lightning-talk">
-        <h3>Networking, Q&A 7PM - 8 PM 🍕 🍹 💬</h3>
-        <p>Drinks and light snacks will be available.</p>
+      <h3>Networking, Q&A 7PM - 8 PM 🍕 🍹 💬</h3>
+      <p>Drinks and light snacks will be available.</p>
     </div>
 
     <h2>Sponsors</h2>
     <p>
-        The London GenAI Meetup: Frontiers and Applications 2025 is hosted with generous support from
-        <a href="https://www.adobe.com">Adobe</a>, <a href="https://www.autodesk.com">Autodesk</a>, and <a href="https://ucl.ac.uk">University College London</a>.
+      The London GenAI Meetup: Frontiers and Applications 2025 is hosted with generous support from
+      <a href="https://www.adobe.com">Adobe</a>, <a href="https://www.autodesk.com">Autodesk</a>, and <a
+        href="https://ucl.ac.uk">University College London</a>.
     </p>
 
     <p class="footer">
-        <img src="./index_files/adobe.png" alt="Adobe">
-        <img src="./index_files/autodesk.jpg" alt="Autodesk">
-        <img src="./index_files/ucl.png" alt="UCL">
+      <img src="./index_files/adobe.png" alt="Adobe">
+      <img src="./index_files/autodesk.jpg" alt="Autodesk">
+      <img src="./index_files/ucl.png" alt="UCL">
     </p>
 
     <br><br>
 </body>
+
 </html>
