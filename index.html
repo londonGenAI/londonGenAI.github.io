@@ -6,141 +6,143 @@
   <title>London GenAI Meetup: Frontiers and Applications 2025</title>
   <meta name="author" content="Niladri">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="https://cs.nyu.edu/~fouhey/NYCVision2025/images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://cs.nyu.edu/~fouhey/NYCVision2025/images/favicon/favicon.ico"
+    type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-<style>
-  body {
-    background-color: #ffffff;
-    color: #333;
-    font-family: 'Roboto', Arial, sans-serif; /* Modern font */
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #333;
+      font-family: 'Roboto', Arial, sans-serif;
+      /* Modern font */
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
 
 
-  
-  .container {
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
-  }
-  
-  h2, h3 {
-    color: #000000;
-    margin-bottom: 15px;
-  }
-  
-  a {
-    color: #0066cc;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .star-wars-text {
-    font-size: 42px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #000000;
-    margin-bottom: 20px;
-  }
-  
-  iframe {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 100%;
-    height: 450px;
-  }
-  
-  .schedule {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    background-color: #f4f7fb;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  .schedule img {
-    width: 150px;
-    flex-shrink: 0;
-    margin-right: 20px;
-  }
-  
-  .schedule-content {
-    flex-grow: 1;
-  }
-  
-  .schedule-content h3 {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .schedule-content p {
-    font-weight: normal;
-    margin-bottom: 10px;
-  }
-  
-  .lightning-talk {
-    padding: 15px 30px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    background-color: #f4f7fb;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  img {
-    border-radius: 4px;
-  }
-  
-  .footer img {
-    height: 55px;
-    margin-right: 10px;
-    vertical-align: middle;
-  }
-  
-  .abstract-toggle {
-    cursor: pointer;
-    color: #0066cc;
-    font-size: 16px;
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-    font-weight: normal;
-  }
-  
-  .abstract-toggle .triangle {
-    margin-right: 8px;
-    transition: transform 0.3s ease;
-  }
-  
-  .abstract-toggle.expanded .triangle {
-    transform: rotate(90deg);
-  }
-  
-  @media(max-width: 600px) {
-    .schedule {
-      flex-direction: column;
-      align-items: center;
+
+    .container {
+      width: 100%;
+      max-width: 800px;
       text-align: center;
     }
-  
+
+    h2,
+    h3 {
+      color: #000000;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .star-wars-text {
+      font-size: 42px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      height: 450px;
+    }
+
+    .schedule {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background-color: #f4f7fb;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
     .schedule img {
-      margin-right: 0;
+      width: 150px;
+      flex-shrink: 0;
+      margin-right: 20px;
+    }
+
+    .schedule-content {
+      flex-grow: 1;
+    }
+
+    .schedule-content h3 {
+      font-weight: bold;
+      font-size: 20px;
       margin-bottom: 10px;
     }
-  }
-  
+
+    .schedule-content p {
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    .lightning-talk {
+      padding: 15px 30px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background-color: #f4f7fb;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    img {
+      border-radius: 4px;
+    }
+
+    .footer img {
+      height: 55px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .abstract-toggle {
+      cursor: pointer;
+      color: #0066cc;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      font-weight: normal;
+    }
+
+    .abstract-toggle .triangle {
+      margin-right: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .abstract-toggle.expanded .triangle {
+      transform: rotate(90deg);
+    }
+
+    @media(max-width: 600px) {
+      .schedule {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .schedule img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
   </style>
 
   <script>
@@ -193,11 +195,12 @@
       <img src="./index_files/kopanas.jpeg">
       <div class="schedule-content">
         <h3><a href="https://grgkopanas.github.io/" target="_blank">George Kopanas</a></h3>
-        <p><b>Member of Technical Staff, Runway</b><br>Keynote 1: 5:10PM — 5:35PM<br>From 3D Reconstruction to Generative Video: A Creative Continuum</p>
+        <p><b>Member of Technical Staff, Runway</b><br>Keynote 1: 5:10PM — 5:35PM<br>From 3D Reconstruction to
+          Generative Video: A Creative Continuum</p>
         <!-- <h3>Keynote 1: 5:10PM — 5:35PM</h3>
         <p><a href="https://grgkopanas.github.io/" target="_blank"><b>George Kopanas</b></a><br>Member of Technical Staff, Runway<br><br>From 3D Reconstruction to Generative Video: A Creative Continuum</p> -->
         <div class="abstract-toggle" onclick="toggleAbstract('abstract1')">
-        <span class="triangle">▶</span> Abstract
+          <span class="triangle">▶</span> Abstract
         </div>
         <p id="abstract1" style="display:none;">3D reconstruction was one of the holy grails of 3D Computer Vision in
           the hope to make 3D representations more readily available without intense amounts of labor to generate 3D
@@ -212,37 +215,62 @@
       <img src="./index_files/vedaldi.jpg">
       <div class="schedule-content">
         <h3><a href="https://www.robots.ox.ac.uk/~vedaldi/" target="_blank">Andrea Vedaldi</a></h3>
-        <p><b>Professor, University of Oxford | Meta</b><br>Keynote 2: 5:35PM — 6:00PM<br>3D generative AI as a foundation of spatial intelligence</p>
+        <p><b>Professor, University of Oxford | Meta</b><br>Keynote 2: 5:35PM — 6:00PM<br>3D generative AI as a
+          foundation of spatial intelligence</p>
         <div class="abstract-toggle" onclick="toggleAbstract('abstract2')">
           <span class="triangle">▶</span> Abstract
         </div>
-        <p id="abstract2" style="display:none;">The development of advanced spatial intelligence is likely to be one of the most important goals of computer vision in the years to come. 
-          Supported by advances in generative Artificial Intelligence (AI), language models have evolved into extraordinarily powerful tools for abstract reasoning, 
-          but their grasp of physical reality is tenuous. This is vividly demonstrated by the fact that even the best image and video generators often produce non-physical hallucinations,
-          despite incorporating language models. In this talk, I will suggest that 3D computer vision, especially when combined with generative AI, will be a key to developing 
-          future AIs that are spatially aware. I will illustrate this point by showcasing some of the work done by my teams at the University of Oxford and Meta. 
-          First, I will introduce the first neural network that can outperform traditional techniques from bundle adjustment, achieving robust, general, 
-          and efficient feed-forward 3D reconstruction. This is a significant leap that opens a path to develop 3D-aware foundations of computer vision. 
-          I will also briefly touch on a new representation for dynamic 3D content that may be the basis to further extend such models to capture motion. 
-          I will then consider generative models as a way to capture rich prior information about 3D objects, including their internal structure and composition. 
-          Finally, I will demonstrate the power of off-the-shelf 3D generators in the creation of complex 3D content, including immersive 3D worlds.
+        <p id="abstract2" style="display:none;">The development of advanced spatial intelligence is likely to be one of
+          the most important goals of computer vision in the years to come.
+          Supported by advances in generative Artificial Intelligence (AI), language models have evolved into
+          extraordinarily powerful tools for abstract reasoning,
+          but their grasp of physical reality is tenuous. This is vividly demonstrated by the fact that even the best
+          image and video generators often produce non-physical hallucinations,
+          despite incorporating language models. In this talk, I will suggest that 3D computer vision, especially when
+          combined with generative AI, will be a key to developing
+          future AIs that are spatially aware. I will illustrate this point by showcasing some of the work done by my
+          teams at the University of Oxford and Meta.
+          First, I will introduce the first neural network that can outperform traditional techniques from bundle
+          adjustment, achieving robust, general,
+          and efficient feed-forward 3D reconstruction. This is a significant leap that opens a path to develop 3D-aware
+          foundations of computer vision.
+          I will also briefly touch on a new representation for dynamic 3D content that may be the basis to further
+          extend such models to capture motion.
+          I will then consider generative models as a way to capture rich prior information about 3D objects, including
+          their internal structure and composition.
+          Finally, I will demonstrate the power of off-the-shelf 3D generators in the creation of complex 3D content,
+          including immersive 3D worlds.
         </p>
       </div>
     </div>
 
     <div class="schedule">
-      <img src="./index_files/placeholder.webp">
-      <div>
-        <h3>Keynote 3: 6:00PM — 6:25PM</h3>
-        <p><b>TBD</b><br>TBD</p>
+      <img src="./index_files/yulia.jpg">
+      <div class="schedule-content">
+        <h3><a href="https://yuliarubanova.github.io/" target="_blank">Yulia Rubanova</a></h3>
+        <p><b>Senior Research Scientist, Google Deepmind</b><br>Keynote 3: 6:00PM — 6:25PM<br>3D physical understanding
+          in generative models</p>
+        <div class="abstract-toggle" onclick="toggleAbstract('abstract3')">
+          <span class="triangle">▶</span> Abstract
+        </div>
+        <p id="abstract3" style="display:none;">Generative models produce remarkably realistic visuals but lack the
+          inherent 3D control of classic simulators. Unlike traditional tools grounded in geometry, they often cannot
+          guarantee 3D consistency, easy scene editing, or object recomposition. This begs the question: do generative
+          models implicitly understand 3D physics enough to enable such control?
+          This talk investigates this. We present evidence of emerging spatial awareness in these models and introduce
+          novel techniques for precise 3D control over object pose and placement. This allows objects to be manipulated
+          and moved between scenes, without embedding explicit 3D rules into the AI itself.
+        </p>
       </div>
     </div>
 
     <div class="lightning-talk">
       <h3>⚡ Lightning Talk Sessions: 6:30PM — 7PM</h3>
-      <p><a href="https://uk.linkedin.com/in/shalini-maiti-a76a2b86" target="_blank"> Shalini Maiti (UCL, Meta)</a>: vLLMs for automatic evaluation of generated 3D objects
+      <p><a href="https://uk.linkedin.com/in/shalini-maiti-a76a2b86" target="_blank"> Shalini Maiti (UCL, Meta)</a>:
+        vLLMs for automatic evaluation of generated 3D objects
       </p>
-      <p><a href="https://edexheim.github.io/" target="_blank">Eric Dexheimer (Imperial College London)</a>: Real-Time 3D Reconstruction: MASt3R-SLAM and Beyond</p>
+      <p><a href="https://edexheim.github.io/" target="_blank">Eric Dexheimer (Imperial College London)</a>: Real-Time
+        3D Reconstruction: MASt3R-SLAM and Beyond</p>
       <p><a href="https://scholar.google.com/citations?user=NVD-BU4AAAAJ&hl=en" target="_blank">Rishabh Kabra (UCL,
           DeepMind)</a>: Probabilistic Inverse Cameras: Image to 3D via Multiview Geometry</p>
     </div>
